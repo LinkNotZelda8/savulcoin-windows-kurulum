@@ -3,12 +3,14 @@
 echo -- SavulCoin guncelleniyor...
 :: Pull latest commits
 cd SavulCoin
+git reset --hard HEAD
 git pull
 call npm install
 
 cd ..
 
 cd savulcoin-reverse-proxy/client
+git reset --hard HEAD
 git pull
 call npm install
 cd ../..
